@@ -14,6 +14,7 @@ import { ROUTES } from '../../constants/routes';
 import useLandingScroll from '../../hooks/@common/useLandingScroll';
 import { theme } from '../../styles/theme';
 import { track } from '../../utils/googleAnalytics/track';
+import ShareButton from '../webShare/ShareToPhotosButton';
 import * as S from './LandingPage.styles';
 
 //TODO: 캐러셀 추가
@@ -43,6 +44,7 @@ const LandingPage = () => {
         >
           <S.TextContainer>소셜 로그인으로 시작하기</S.TextContainer>
           <S.RowContainer>
+            <ShareButton />
             <IconLabelButton
               icon={<NaverIcon />}
               style={{ backgroundColor: theme.colors.naver }}
