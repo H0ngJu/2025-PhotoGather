@@ -2,7 +2,12 @@ import defaultImage from '@assets/images/default_image.png';
 import diamond from '@assets/images/diamond.png';
 import rocket from '@assets/images/rocket.png';
 
-export const mockImages: string[] = [defaultImage, diamond, rocket];
+const base = [defaultImage, diamond, rocket] as const;
+
+export const mockImages: string[] = Array.from(
+  { length: 100 },
+  (_, i) => base[i % base.length],
+);
 
 // utils/shareImages.ts
 export const urlToFile = async (url: string, index: number): Promise<File> => {
