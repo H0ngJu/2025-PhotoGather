@@ -1,13 +1,13 @@
 import defaultImage from '@assets/images/default_image.png';
-// import diamond from '@assets/images/diamond.png';
+import diamond from '@assets/images/diamond.png';
 import high from '@assets/images/high.jpeg';
 
-// import rocket from '@assets/images/rocket.png';
+import rocket from '@assets/images/rocket.png';
 
-const base = [defaultImage, high] as const;
+const base = [defaultImage, diamond, rocket] as const;
 
 export const mockImages: string[] = Array.from(
-  { length: 100 },
+  { length: 1 },
   (_, i) => base[i % base.length],
 );
 
