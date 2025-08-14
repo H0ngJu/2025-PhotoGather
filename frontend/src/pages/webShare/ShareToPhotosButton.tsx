@@ -1,6 +1,6 @@
 import defaultImage from '@assets/images/default_image.png';
 // import diamond from '@assets/images/diamond.png';
-import high from '@assets/images/high.png';
+import high from '@assets/images/high.jpeg';
 
 // import rocket from '@assets/images/rocket.png';
 
