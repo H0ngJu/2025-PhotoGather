@@ -7,7 +7,7 @@ import rocket from '@assets/images/rocket.png';
 const base = [defaultImage, diamond, rocket] as const;
 
 export const mockImages: string[] = Array.from(
-  { length: 1 },
+  { length: 10 },
   (_, i) => base[i % base.length],
 );
 
